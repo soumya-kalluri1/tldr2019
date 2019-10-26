@@ -1,7 +1,9 @@
 12f22b80-04a3-4c19-8690-3e5fcf348baa\:credentialProfileName=default
+35538233-47bf-4b0b-8ed9-ddad40965fd5\:credentialProfileName=default
 cognitoIdentityId=us-east-1\:8165aac4-a09e-4757-afce-6914b238f675
 cognitoIdentityPoolId=us-east-1\:d4fdc07f-94fd-4cc6-94fb-f903657f05c1
-currentAccount=12f22b80-04a3-4c19-8690-3e5fcf348baa
+credentialProfileAccountIds=35538233-47bf-4b0b-8ed9-ddad40965fd5
+currentAccount=35538233-47bf-4b0b-8ed9-ddad40965fd5
 currentDefaultAccount=12f22b80-04a3-4c19-8690-3e5fcf348baa
 ec2PreferencesImported=true
 eclipse.preferences.version=1
