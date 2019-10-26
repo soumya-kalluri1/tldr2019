@@ -1,0 +1,68 @@
+import com.amazonaws.auth.AWSCredentialsProvider;
+import com.amazonaws.auth.DefaultAWSCredentialsProviderChain;
+import com.amazonaws.services.comprehend.AmazonComprehend;
+import com.amazonaws.services.comprehend.AmazonComprehendClientBuilder;
+import com.amazonaws.services.comprehend.model.DetectKeyPhrasesRequest;
+import com.amazonaws.services.comprehend.model.DetectKeyPhrasesResult;
+import com.amazonaws.services.comprehend.model.DetectSentimentResult;
+import com.amazonaws.services.comprehend.model.DetectSentimentRequest;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+import com.amazonaws.*;
+import com.amazonaws.services.comprehend.model.InputDataConfig;
+public class App 
+{
+	//private static final String size = "s"
+//	private static final int CHAR_SIZE = "s".getytes();
+    public static void main( String[] args )
+    {
+    	
+    	String text = "";
+    	try {
+        text = new String(Files.readAllBytes(Paths.get("C:\\Users\\Soumya Kalluri\\School\\College\\ScientificArticleTest.txt"))) ;
+    	} catch(IOException e) {
+    		e.printStackTrace();
+    	}
+    	
+    	String[] splits = stringSplitter( text );
+    	
+    	//System.out.println(text);
+        // Create credentials using a provider chain. For more information, see
+        // https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/credentials.html
+        AWSCredentialsProvider awsCreds = DefaultAWSCredentialsProviderChain.getInstance();
+ 
+        AmazonComprehend comprehendClient =
+            AmazonComprehendClientBuilder.standard()
+                                         .withCredentials(awsCreds)
+                                         .withRegion("us-west-2")
+                                         .build();
+                                         
+        // Call detectKeyPhrases API
+        System.out.println("Calling DetectKeyPhrases");
+        
+        DetectSentimentRequest detectSentimentRequest = new DetectSentimentRequest().withText(splits[0])
+                                                                                       .withLanguageCode("en");
+        DetectSentimentResult detectKeyPhrasesResult = comprehendClient.detectSentiment(detectSentimentRequest);
+        System.out.println( detectKeyPhrasesResult.getSentiment() );
+        System.out.println("End of DetectKeyPhrases\n");
+    }
+    
+    private static String[] stringSplitter( String text ) {
+    	String[] split = new String[ (text.length() / 2500) + 1];
+    	int index = 0; 
+    	for( int i = 0; i < text.length(); i+=2500 ) {
+    		if( i+2500 < text.length()) {
+    		split[index] = text.substring(i,i+2500); 
+    		} else {
+    		  split[index] = text.substring(i, text.length());
+    		}
+    		index++;
+    	}
+    	return split;
+    	
+    }
+    
+}
