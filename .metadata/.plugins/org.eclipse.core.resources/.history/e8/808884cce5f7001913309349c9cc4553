@@ -4,12 +4,13 @@ import com.amazonaws.services.comprehend.AmazonComprehend;
 import com.amazonaws.services.comprehend.AmazonComprehendClientBuilder;
 import com.amazonaws.services.comprehend.model.DetectKeyPhrasesRequest;
 import com.amazonaws.services.comprehend.model.DetectKeyPhrasesResult;
-import com.amazonaws.*;
 
 public class App 
 {
     public static void main( String[] args )
     {
+    	
+    	
     	
 
         String text = "It is raining today in Seattle";
@@ -26,7 +27,6 @@ public class App
                                          
         // Call detectKeyPhrases API
         System.out.println("Calling DetectKeyPhrases");
-        
         DetectKeyPhrasesRequest detectKeyPhrasesRequest = new DetectKeyPhrasesRequest().withText(text)
                                                                                        .withLanguageCode("en");
         DetectKeyPhrasesResult detectKeyPhrasesResult = comprehendClient.detectKeyPhrases(detectKeyPhrasesRequest);
