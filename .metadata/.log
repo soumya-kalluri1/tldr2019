@@ -1,0 +1,186 @@
+!SESSION 2019-10-26 02:01:59.550 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2019-10-26 02:07:58.224
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at file:/C:/Users/Soumya%20Kalluri/Documents/AWS/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:398)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:353)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:244)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:121)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:106)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$1.runModal(PreloadingRepositoryHandler.java:84)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:190)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2019-10-26 02:07:58.226
+!MESSAGE No repository found at file:/C:/Users/Soumya%20Kalluri/Documents/AWS/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2019-10-26 02:08:39.930
+!MESSAGE No repository found at file:/C:/Users/Soumya%20Kalluri/Documents/AWS/.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2019-10-26 02:11:58.165
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2019-10-26 02:11:58.165
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-10-26 02:11:58.165
+!MESSAGE Software being installed: AWS SDK for Android 1.0.0.v201704181355 (com.amazonaws.eclipse.android.sdk.feature.feature.group 1.0.0.v201704181355)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-10-26 02:11:58.165
+!MESSAGE Missing requirement: AWS SDK for Android 1.0.0.v201704181355 (com.amazonaws.eclipse.android.sdk.feature.feature.group 1.0.0.v201704181355) requires 'org.eclipse.equinox.p2.iu; com.android.ide.eclipse.adt 18.0.0' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2019-10-26 02:11:58.186
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2019-10-26 02:11:58.186
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-10-26 02:11:58.186
+!MESSAGE Software being installed: AWS SDK for Android 1.0.0.v201704181355 (com.amazonaws.eclipse.android.sdk.feature.feature.group 1.0.0.v201704181355)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-10-26 02:11:58.186
+!MESSAGE Missing requirement: AWS SDK for Android 1.0.0.v201704181355 (com.amazonaws.eclipse.android.sdk.feature.feature.group 1.0.0.v201704181355) requires 'org.eclipse.equinox.p2.iu; com.android.ide.eclipse.adt 18.0.0' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2019-10-26 02:11:58.214
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2019-10-26 02:11:58.214
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-10-26 02:11:58.214
+!MESSAGE Software being installed: AWS SDK for Android 1.0.0.v201704181355 (com.amazonaws.eclipse.android.sdk.feature.feature.group 1.0.0.v201704181355)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-10-26 02:11:58.214
+!MESSAGE Missing requirement: AWS SDK for Android 1.0.0.v201704181355 (com.amazonaws.eclipse.android.sdk.feature.feature.group 1.0.0.v201704181355) requires 'org.eclipse.equinox.p2.iu; com.android.ide.eclipse.adt 18.0.0' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2019-10-26 02:11:58.219
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2019-10-26 02:11:58.219
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-10-26 02:11:58.219
+!MESSAGE Software being installed: AWS SDK for Android 1.0.0.v201704181355 (com.amazonaws.eclipse.android.sdk.feature.feature.group 1.0.0.v201704181355)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-10-26 02:11:58.219
+!MESSAGE Missing requirement: AWS SDK for Android 1.0.0.v201704181355 (com.amazonaws.eclipse.android.sdk.feature.feature.group 1.0.0.v201704181355) requires 'org.eclipse.equinox.p2.iu; com.android.ide.eclipse.adt 18.0.0' but it could not be found
+!SESSION 2019-10-26 02:13:28.982 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2019-10-26 02:14:27.501
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2019-10-26 02:14:29.924
+!MESSAGE Failed to load credential profiles from (C:\Users\Soumya Kalluri\.aws\credentials).AWS credential profiles file not found in the given path: C:\Users\Soumya Kalluri\.aws\credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2019-10-26 02:14:29.949
+!MESSAGE Monitoring content of C:\Users\Soumya Kalluri\.aws\credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2019-10-26 02:14:30.464
+!MESSAGE AWS toolkit core plugin initialized after 2964 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2019-10-26 02:14:30.481
+!MESSAGE Failed to load credential profiles from (C:\Users\Soumya Kalluri\.aws\credentials).AWS credential profiles file not found in the given path: C:\Users\Soumya Kalluri\.aws\credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2019-10-26 02:14:30.489
+!MESSAGE No account is configued in the toolkit. Bootstrapping the credentials file at (C:\Users\Soumya Kalluri\.aws\credentials).
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2019-10-26 02:14:30.497
+!MESSAGE Failed to load credential profiles from (C:\Users\Soumya Kalluri\.aws\credentials).C:\Users\Soumya Kalluri\.aws\credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2019-10-26 02:14:30.505
+!MESSAGE No account could be found. Switching to a temporary account.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2019-10-26 02:14:31.176
+!MESSAGE Initialized a new Cognito identity us-east-1:8165aac4-a09e-4757-afce-6914b238f675
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2019-10-26 02:17:35.602
+!MESSAGE Switching to global default account
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2019-10-26 02:17:35.616
+!MESSAGE No profile found: default
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2019-10-26 02:17:35.948
+!MESSAGE The current accountId is not found in the system. Switching to the default account.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-10-26 02:44:16.140
+!MESSAGE Could not download sources for com.amazonaws:aws-java-sdk:1.11.256
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact com.amazonaws:aws-java-sdk:jar:sources:1.11.256
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:763)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:731)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:708)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:279)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:254)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:221)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:137)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1336)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:135)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing com.amazonaws:aws-java-sdk:jar:sources:1.11.256
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2019-10-26 02:44:16.140
+!MESSAGE Could not resolve artifact com.amazonaws:aws-java-sdk:jar:sources:1.11.256
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2019-10-26 02:44:16.140
+!MESSAGE Missing com.amazonaws:aws-java-sdk:jar:sources:1.11.256
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-10-26 02:44:23.228
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-10-26 02:44:23.252
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-10-26 02:44:58.631
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-10-26 02:44:58.695
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-10-26 02:44:59.592
+!MESSAGE Could not download javadoc for com.amazonaws:aws-java-sdk:1.11.256
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact com.amazonaws:aws-java-sdk:jar:javadoc:1.11.256
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:763)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:731)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:708)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:279)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:265)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:221)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:137)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1336)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:135)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing com.amazonaws:aws-java-sdk:jar:javadoc:1.11.256
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2019-10-26 02:44:59.593
+!MESSAGE Could not resolve artifact com.amazonaws:aws-java-sdk:jar:javadoc:1.11.256
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2019-10-26 02:44:59.593
+!MESSAGE Missing com.amazonaws:aws-java-sdk:jar:javadoc:1.11.256
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-10-26 02:45:00.805
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-10-26 02:45:00.817
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
